@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <title>M8 | Tabs Component</title>
+  </head>
+
+  <body class="min-h-screen bg-white text-black">
+    <nav
+      id="tabs"
+      role="tablist"
+      aria-label="Content tabs"
+      class="flex flex-wrap justify-center gap-8 p-10"
+    >
+      <button
+        type="button"
+        id="firstBtn"
+        role="tab"
+        aria-controls="firstContent"
+        aria-selected="true"
+        class="border-b-2 border-black text-xl text-black"
+      >
+        First Tab
+      </button>
+
+      <button
+        type="button"
+        id="secondBtn"
+        role="tab"
+        aria-controls="secondContent"
+        aria-selected="false"
+        class="border-b-2 border-transparent text-xl text-gray-500"
+      >
+        Second Tab
+      </button>
+
+      <button
+        type="button"
+        id="thirdBtn"
+        role="tab"
+        aria-controls="thirdContent"
+        aria-selected="false"
+        class="border-b-2 border-transparent text-xl text-gray-500"
+      >
+        Third Tab
+      </button>
+
+      <button
+        type="button"
+        id="fourthBtn"
+        role="tab"
+        aria-controls="fourthContent"
+        aria-selected="false"
+        class="border-b-2 border-transparent text-xl text-gray-500"
+      >
+        Fourth Tab
+      </button>
+    </nav>
+
+    <main id="content" class="my-10 flex flex-col items-center gap-6 px-4">
+      <section
+        id="firstContent"
+        role="tabpanel"
+        aria-labelledby="firstBtn"
+        class="h-64 w-full max-w-4xl bg-black text-center text-white content-center font-bold rounded-xl"
+      >
+        First Tab Content
+      </section>
+
+      <section
+        id="secondContent"
+        role="tabpanel"
+        aria-labelledby="secondBtn"
+        class="h-64 w-full max-w-4xl bg-black text-center text-white content-center font-bold rounded-xl hidden"
+      >
+        Second Tab Content
+      </section>
+
+      <section
+        id="thirdContent"
+        role="tabpanel"
+        aria-labelledby="thirdBtn"
+        class="h-64 w-full max-w-4xl bg-black text-center text-white content-center font-bold rounded-xl hidden"
+      >
+        Third Tab Content
+      </section>
+
+      <section
+        id="fourthContent"
+        role="tabpanel"
+        aria-labelledby="fourthBtn"
+        class="h-64 w-full max-w-4xl bg-black text-center text-white content-center font-bold rounded-xl hidden"
+      >
+        Fourth Tab Content
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
